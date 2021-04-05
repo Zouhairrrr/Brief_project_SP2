@@ -1,0 +1,84 @@
+.edit_page{
+    transform: translateY(-615%);
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    z-index: 10;
+    .edit_form{
+        padding: 2rem;
+        height: 100%;
+        display: flex;
+        box-shadow: 2px 2px 22px black;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background: rgb(189, 142, 171); 
+        .box{
+        width: 20rem;
+         display: flex;
+        justify-content: space-between;
+        label{
+            color: white;
+            font-weight: bolder;
+            border: none;
+        }
+        input{
+            padding: .4rem;
+            border: none;
+            border-radius: .3rem;
+            border: none;
+        }
+        }
+        .image_holder{
+            width: 40%;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            label{
+                color: white;
+                opacity: .6;
+                font-weight: 100;
+                border: none;
+            }
+            input[type="file"] {
+                box-shadow: 2px 2px 6px black;
+                padding: .4rem .6rem;
+                border: 1px solid red;
+            }
+        }
+    }
+    .select select{
+        padding: .4rem .6rem;
+        color: black;
+        background: antiquewhite;
+        font-weight: bold;
+    }
+    .save_btn button{
+        padding: .5rem 1.5rem;
+        background: white;
+        border: none;
+        box-shadow: 2px 2px 12px black;
+    }
+}
+
+
+.editShow{
+    transform: translateY(-450%)!important;
+}
+.model1{
+  position: fixed;
+  background: #00000085;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}

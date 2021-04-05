@@ -1,0 +1,45 @@
+@import "_variable";
+
+.main_checklist{
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .main_checklist_buttons{
+        box-shadow: 2px 2px 12px black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .box{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $hover-txt-color;
+        }
+        .box a{
+            list-style: none;
+            color: white;
+            font-size: $font-regular;
+       
+
+        .box_btn{
+            border: none;
+            background-color: #abdd22;
+            padding: 1.6rem 1.9rem;
+            border-radius: .2rem;
+            transition: ease-in-out .3s;
+            box-shadow: 2px 2px 12px black;
+        }
+        .box_btn:hover{
+            border: none;
+            color:white ;
+            background-color: rgba(171,221,34 ,76%);
+            // padding: 1.9rem 2.3rem; 
+            transform: scale(1.2);
+            transition: ease-in-out .3s;
+        }
+     }
+    }
+}
+

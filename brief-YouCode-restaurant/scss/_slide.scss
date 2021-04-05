@@ -1,0 +1,27 @@
+.slid {
+  background: #abdd2278;
+  width: 20rem;
+  height: 28rem;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  border: 2px solid #abdd22cf;
+  left: 35%;
+  box-shadow: 2px 2px 12px black;
+  transform: translateY(-100%);
+  transition: 1.7s;
+}
+
+.show {
+  top: 29rem !important;
+}
+
+.showModel {
+  position: fixed;
+  background: #00000085;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
