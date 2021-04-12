@@ -23,9 +23,9 @@ include("../includes/buttons.php")
             <form action="../process/Plogin.php" method="POST">
                 <h2>LOGIN PAGE</h2>
                 <div class="input_btn"><input type="text" name="user" placeholder="USER NAME" required></div>
-                <p>this infotmation is required <span>*</span></p>
+                <p>this infotmation is required <span style="color: blue;">*</span></p>
                 <div class="input_btn"><input type="password" name="password" placeholder="PASSWORD" required></div>
-                <p>this infotmation is required <span>*</span></p>
+                <p>this infotmation is required <span style="color: blue;">*</span></p>
                 <div class="login_btn2"><button name="submit"> LOGIN </button></div>
             </form>
         </div>

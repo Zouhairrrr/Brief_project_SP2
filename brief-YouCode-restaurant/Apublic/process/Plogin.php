@@ -18,6 +18,5 @@ if (isset($_POST['submit'])) {
         header('location: ../pages/admin/dashBoard.php');
     } else {
         header('location: ../pages/login.php');
-        echo 'password and email incorect';
     };
 };

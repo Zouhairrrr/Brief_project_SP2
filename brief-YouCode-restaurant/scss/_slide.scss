@@ -1,24 +1,61 @@
 .slid {
-  background: #abdd2278;
+  background: #b3e629;
   width: 20rem;
   height: 28rem;
   position: absolute;
   z-index: 10;
   top: 0;
-  border: 2px solid #abdd22cf;
   left: 35%;
   box-shadow: 2px 2px 12px black;
   transform: translateY(-100%);
   transition: 1.7s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  a{
+    top: 3%;
+    position: relative;
+    color: white;
+    background: rgba(0, 0, 0, 0.479);
+    padding: .7rem;
+    border-radius: 2rem;
+    right: 40%;
+  }
+  h1{
+    margin: 0;
+    padding: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+  }
+  img{
+    width: 250px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px black;
+  }
+  h2{
+    margin: 0;
+    padding: .4rem;
+    color: white;
+    text-shadow: 0px 0px 12px black;
+  }
+  p{
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+  }
 }
 
 .show {
-  top: 29rem !important;
+  top: 27rem !important;
 }
 
 .showModel {
   position: fixed;
-  background: #00000085;
+  background: #000000ab;
   bottom: 0;
   top: 0;
   left: 0;

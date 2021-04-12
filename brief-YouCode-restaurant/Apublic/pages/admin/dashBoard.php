@@ -15,17 +15,21 @@ if (!isset($_SESSION['user']) && $_SESSION['user'] = true) {
     $query = mysqli_query($link, $requette);
     $data = mysqli_fetch_array($query);
 ?>
-
-    <main>
+    <main class="m_container">
         <header>
-            <nav>
+        <nav>
+            <div class="nav">
                 <ul>
-                    <?= listMaker("../pages/menu.php", "MENU") ?>
+                    <?= listMaker("../../menu.php", "MENU") ?>
+                    <?= listMaker("#", "Profile") ?>
                     <?= listMaker("#", "SETTINGS") ?>
-                    <?= listMaker("#", "PROFILE") ?>
                 </ul>
-            </nav>
+            </div>
         </header>
+        <div class="addMenu_">
+            <a href="ajouter.php"> <i class="fas fa-plus"> ADD NEW PLAT</i></a>
+        </div>
+
         <div class="container_dbrd">
             <div class="form_list">
                 <ul>
@@ -36,9 +40,7 @@ if (!isset($_SESSION['user']) && $_SESSION['user'] = true) {
                     ?>
                 </ul>
             </div>
-            <div>
-                <a href="ajouter.php">ajouter menu</a>
-            </div>
+           
             <div class="menu_modifier">
                 <table>
                     <thead>
@@ -57,14 +59,14 @@ if (!isset($_SESSION['user']) && $_SESSION['user'] = true) {
                         ?>
                             <tr>
                                 <td><?= $data['title'] ?></td>
-                                <td> <img src="../../images/<?= $data['image'] ?>" style="width: 80px;"></td>
+                                <td> <img src="../../images/<?= $data['image'] ?>" style="width: 4.7rem; height:4rem;"></td>
                                 <td><?= $data['price'] ?></td>
                                 <td>
                                     <form action="./check/deleted.php" method="post">
                                         <input type="hidden" name="id_delete" value="<?= $data['id_menu'] ?>">
-                                        <button type="submit"  name="submit">delete</button>
+                                        <button class="red" style="background:transparent;border:none;padding:.5rem;cursor:pointer" type="submit"  name="submit"><i class="fas fa-trash-alt"></i> DELETE</button>
                                     </form>
-                                    <a href="./check/update.php?id=<?= $data['id_menu'] ?>">edit</a>
+                                    <a  style="text-decoration: none;color: black;padding:.5rem;"  href="./check/update.php?id=<?= $data['id_menu'] ?>"><i class="far fa-edit blue"> EDIT</i></a>
                                 </td>
                             </tr>
                         <?php }; ?>
@@ -80,3 +82,11 @@ if (!isset($_SESSION['user']) && $_SESSION['user'] = true) {
 
 </body>
 </html>
+<style>
+    .red:hover{
+        color: blueviolet;
+    }
+    .blue:hover{
+        color: blueviolet;
+    }
+</style>

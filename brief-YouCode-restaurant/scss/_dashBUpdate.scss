@@ -1,14 +1,11 @@
 .edit_page{
-    transform: translateY(-615%);
     width: 80%;
     height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 10%;
-    z-index: 10;
+
     .edit_form{
         padding: 2rem;
         height: 100%;
@@ -51,7 +48,7 @@
             input[type="file"] {
                 box-shadow: 2px 2px 6px black;
                 padding: .4rem .6rem;
-                border: 1px solid red;
+                border: 1px solid rgb(15, 55, 233);
             }
         }
     }
@@ -70,9 +67,7 @@
 }
 
 
-.editShow{
-    transform: translateY(-450%)!important;
-}
+
 .model1{
   position: fixed;
   background: #00000085;
