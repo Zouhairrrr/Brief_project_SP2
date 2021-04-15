@@ -2,32 +2,34 @@
 include("../includes/header.php");
 head("../../css/main.css");
 include("../process/Plogin.php");
-include("../includes/buttons.php")
+include("../includes/buttons.php");
+include("../process/Psign.php");
+
 ?>
 
 
-<main class="login_box">
+<main class="sign_box">
     <nav class="nav">
         <?= listMaker("./menu.php", "MENU") ?>
         <?= listMaker("../../index.php", "HOME") ?>
     </nav>
-    <hr style="width: 90%;margin: .6rem auto;">
     <div class="wrapper">
         <div class="intro">
-            <div class="intro_image"></div>
-            <div class="intro_text">
+            <div class=""></div>
+            <div class="">
                 <h2>Lorem, ipsum.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum, veritatis aut vero iusto qui odio eveniet minus facere cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum, veritatis aut vero iusto qui odio eveniet minus facere cum?</p>
             </div>
         </div>
-        <div class="form_login">
+        <div class="">
             <form action="../process/Plogin.php" method="POST">
-                <h2>LOGIN PAGE</h2>
-                <div class="input_btn"><input type="text" name="user" placeholder="USER NAME" required></div>
-                <p>this infotmation is required <span>*</span></p>
-                <div class="input_btn"><input type="password" name="password" placeholder="PASSWORD" required></div>
-                <p>this infotmation is required <span>*</span></p>
-                <div class="login_btn2"><button name="submit"> LOGIN </button></div>
+                
+                <input type="text" name="name_" placeholder="USER NAME" required>
+                <input type="text" name="lastName_" placeholder="USER NAME" required>
+                <input type="email" name="email_" placeholder="USER EMAIL" required>
+                <input type="password" name="Upassword" placeholder="PASSWORD" required>
+                <input type="password" name="U_password" placeholder="Confirm PASSWORD" required>
+                <input name="submit_" value="SIGN UP"  >
             </form>
         </div>
     </div>
